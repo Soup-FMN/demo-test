@@ -1,0 +1,138 @@
+:root {
+    --bg-color-about-me-web: #27282c;
+    --clr-gray: rgb(139, 139, 139);
+    --clr-blue: #1e9bff;
+    --clr-green: #01fe87;
+    --clr-white: #fff;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-about-me-web);
+    min-height: 100vh;
+    background-color: var(--bg-color-about-me-web);
+    background-size: contain;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+}
+
+.container .card {
+    box-shadow: var(--clr-blue) 0px 5px 15px;
+    border-radius: 20px;
+    position: relative;
+    height: 600px;
+    background: var(--bg-color-about-me-web);
+    display: flex;
+    margin: 30px 0;
+}
+
+.container .card .imgBox {
+    box-shadow: var(--clr-blue) 0px 0px 0px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBox {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+}
+
+.content {
+    position: relative;
+}
+
+.head_content {
+    width: 100px;
+}
+
+h1   {
+    position:absolute;
+    top: 100px;  
+    right: 60px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white);
+}
+
+h2 {
+    position: absolute;
+    top: 140px;
+    right: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    color: #fff;
+}
+
+
+
+.container .card .content {
+    position: absolute;
+    right: 120px;
+    width: calc(100%-75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-name {
+    line-height: 30px;
+}
+
+p {
+ color: #fff;
+ font-weight: 600;
+ font-size: 14px;
+}
+
+h3 {
+    color: #69b2ed;
+}
+
+a { 
+    position:absolute;
+    top: 400px;
+    left: 10px;
+    border-radius: 5px;
+    margin-left: 200px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color:var(--clr-gray);
+    text-decoration: none;
+    color: aliceblue;
+}
